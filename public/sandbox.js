@@ -1,10 +1,22 @@
 "use strict";
-var logDetails = function (uid, item) {
-    console.log("".concat(item, " has a uid of ").concat(uid));
+// let greet: Function;
+//example 1
+var greet;
+greet = function (name, greeting) {
+    console.log("".concat(name, " says ").concat(greeting));
 };
-var greet = function (user) {
-    console.log("".concat(user.name, " says hello"));
+//example 2
+var calc;
+calc = function (numOne, numTwo, action) {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
 };
-var greetAgain = function (user) {
-    console.log("".concat(user.name, " says hello"));
+//example 3
+var logDetails;
+logDetails = function (ninja) {
+    console.log("".concat(ninja.name, " is ").concat(ninja.age, " years old."));
 };
