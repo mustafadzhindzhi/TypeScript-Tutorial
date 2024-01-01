@@ -27,4 +27,17 @@ const addUID = (obj) => {
     return Object.assign(Object.assign({}, obj), { uid });
 };
 let docOne = addUID({ name: 'yoshi', age: 30 });
-console.log(docOne);
+// let docTwo = addUID('hello');
+console.log(docOne.name);
+;
+const docThree = {
+    uid: 1,
+    resourceName: 'person',
+    data: { name: 'shaun' }
+};
+const docFour = {
+    uid: 2,
+    resourceName: 'shopping list',
+    data: ['bread', 'milk', 'toilet roll']
+};
+console.log(docThree, docFour);
