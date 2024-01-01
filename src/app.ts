@@ -28,21 +28,24 @@ form.addEventListener('submit', (e: Event) => {
 });
 
 //ENUMS
+enum ResourceType {BOOK, AUTHOR, FILM, DIRECTOR, PERSON};
 
 interface Resource<T> {
     uid: number;
-    resourceType: number;
+    resourceType: ResourceType;
     data: T;
 };
 
 const docOne: Resource<object> = {
     uid: 1, 
-    resourceType: 3, 
+    resourceType: ResourceType.BOOK, 
     data: {title: 'name of the wind'}
 };
 
 const docTwo: Resource<object> = {
     uid: 10, 
-    resourceType: 4, 
+    resourceType: ResourceType.PERSON, 
     data: {title: 'yoshi'}
-}
+};
+
+console.log(docOne, docTwo);
