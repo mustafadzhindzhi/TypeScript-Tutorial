@@ -41,6 +41,3 @@ let tup: [string, number, boolean] = ['ryu', 25, true];
 tup[0] = 'ken';
 tup[1] = 40;
 
-// let student: [string, number];
-// student = [8585858, 'ken']
-// student = ['chun-li', 2223];
